@@ -1,22 +1,23 @@
-import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import React from 'react';
+import {View, Text, StyleSheet} from 'react-native';
 
-export default function HelloWorld(){
-  return(
-    <View style = {styles.container}>
-      <Text style = {styles.text}>Hello World!!!!</Text>
+export default function HelloWorld() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Hello World!!!!</Text>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
+    flexDirection: 'row',
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
-  text:{
-    fontSize: 30
-  }
-})
+  text: {
+    fontSize: 30,
+  },
+});
