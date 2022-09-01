@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native';
 
 export default function HelloWorld() {
   return (
-    <View style={styles.container}>
+    <View style={styles.mainContainer}>
       <Text style={styles.text}>Hello World!!!!!!</Text>
       <Text>Extra line</Text>
     </View>
@@ -11,14 +11,15 @@ export default function HelloWorld() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
+    flexDirection: 'row',
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'flex-end',
+    alignItems: 'center',
   },
 
   text: {
-    fontSize: 30,
+    fontSize: 50,
   },
 });
 
